@@ -1,0 +1,10 @@
+#负载均衡配置
+order-server:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+#hystrix 查看监控端点 hystrix.stream支持的最大并发
+hystrix:
+  config:
+    stream:
+      maxConcurrentConnections: 10

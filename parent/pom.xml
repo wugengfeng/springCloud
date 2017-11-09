@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 
 	<name>parent</name>
-	<description>项目公共父类</description>
+	<description>根项目</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -34,11 +34,37 @@
 				<scope>import</scope>
 			</dependency>
 
+
+			<!-- 引入接口项目 -->
+			<dependency>
+				<groupId>com.wugf</groupId>
+				<artifactId>order-facade</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<modules>
-		<module>../micro-service/common-server/eureka-server</module>
+		<!-- 微服务模块配置 -->
+		<module>../micro-server/common-server/eureka-server</module>
+		<module>../micro-server/common-server/config-server</module>
+		<module>../micro-server/business-server/user-server</module>
+		<module>../micro-server/business-server/order-server</module>
+		<module>../micro-server/common-server/monitor-server</module>
+		<module>../micro-server/common-server/turbine-server</module>
+		<module>../micro-server/common-server/gateway-server</module>
+		<module>../micro-server/common-server/git-config-server</module>
+		<module>../micro-server/common-server/zipkin-server</module>
+
+		<!-- 非jvm微服务 -->
+		<module>../micro-server/sidecar-server/stock-server</module>
+
+		<!-- 微服务接口配置 -->
+		<module>../micro-server/business-facade/user-facade</module>
+		<module>../micro-server/business-facade/order-facade</module>
+
+		<!-- 前端接口服务 -->
+		<module>../server-consumer/shopping-mall</module>
 	</modules>
 
 	<build>

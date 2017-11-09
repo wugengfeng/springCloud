@@ -1,0 +1,13 @@
+server:
+  port: 9010
+
+#配置elasticsearch
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      hosts: 39.108.107.103:9300
+      cluster: elasticsearch
+      index: zipkin
+      index-shards: 5
+      index-replicas: 1

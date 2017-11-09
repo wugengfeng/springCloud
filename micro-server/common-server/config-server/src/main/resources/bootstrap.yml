@@ -1,0 +1,31 @@
+server:
+  port: 8889
+
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: false
+  profiles:
+    active: native
+
+eureka:
+  instance:
+    # 健康检查相关配置
+    lease-expiration-duration-in-seconds: 30      # 续约更新时间间隔（默认30秒）
+    lease-renewal-interval-in-seconds: 10         # 续约到期时间（默认90秒）
+    # 将IP注册到eureka, 但是以下两个都不能把IP显示出来, 测试不通过,然后也不推荐使用IP,kubernetes里面的hostname更易读
+    # prefer-ip-address: true                       # 默认为false, 即将hostname注册到eureka,但是如果解析不到hostname,也会将ip注册到eureka
+    # preferIpAddress: true
+    # eureka回调的ip,如果不写的话，默认返回hostname，但是在k8s服务相互调用的时候，是调用不到的
+    #hostname: config-server
+    metadata-map:
+      my-metadata: 自定义元数据
+  client:
+    healthcheck:
+      enabled: true                               # 开启健康检查（需要spring-boot-starter-actuator依赖）
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      #defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://wugf:123456@localhost:8761/eureka #eureka 加密后的注册地址

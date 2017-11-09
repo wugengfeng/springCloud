@@ -1,0 +1,22 @@
+hystrix:
+  stream:
+    dashboard:
+      intervalInMilliseconds: 2000
+---
+spring:
+  profiles: local
+  cloud:
+      config:                                 #配置中心
+        enabled: true
+        uri: http://localhost:8900
+        failFast: true
+
+---
+spring:
+  profiles: dev
+  cloud:
+      config:                                 #配置中心
+        enabled: true
+        uri: http://localhost:8901
+        failFast: true
+---

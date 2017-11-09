@@ -1,0 +1,12 @@
+server:
+  port: 9096
+spring:
+  application:
+    name: turbine-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://wugf:123456@localhost:8761/eureka
+turbine:
+  appConfig: shopping-mall
+  clusterNameExpression: new String("default")

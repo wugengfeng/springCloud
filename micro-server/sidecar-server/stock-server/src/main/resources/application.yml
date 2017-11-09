@@ -1,0 +1,22 @@
+server:
+  port: 9096
+spring:
+  application:
+    name: sidecar-stock-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://wugf:123456@localhost:8761/eureka
+#整合非JVM服务配置
+sidecar:
+  port: 8050
+  health-uri: http://localhost:8050/health
+# 如果sidecar与非jvm服务不在一台云主机上的解决方法
+#方法1:
+#eureka:
+#  instance:
+#    hostname: 非JVM微服务的hostname
+#方法2:
+#sidecar:
+#  hostname: 非JVM为服务的hostname
+#    ip-address: 非jvm为服务的IP地址

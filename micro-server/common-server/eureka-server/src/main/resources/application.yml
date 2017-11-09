@@ -1,0 +1,21 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false                       #是否将自己注册到 eureka服务中
+    fetchRegistry: false                            #是否获取eureka服务的注册信息，eureka集群才使用
+    serviceUrl:
+      defaultZone: http://wugf:123456@localhost:8761/eureka
+
+spring:
+  application:
+    name: eureka-server
+
+#eureka 服务安全验证信息
+security:
+  basic:
+    enabled: true                                     #开启基于http的basic验证
+  user:
+    name: wugf
+    password: 123456
