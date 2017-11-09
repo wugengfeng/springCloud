@@ -63,4 +63,5 @@ spring:
 在项目resorces下的bootstrap.yml文件下。此文件加载优先级
 高于application.yml
 ```
+PS:MQ消息总线动态修改配置不用停止服务
 
