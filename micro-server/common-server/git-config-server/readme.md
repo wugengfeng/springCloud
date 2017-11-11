@@ -7,7 +7,7 @@ application: 服务名称
 profile: 环境标识
 
 配置文件中 searchPaths 为github上的字目录
-目录格式参考：https://github.com/z515535/config 的config-local和config-dev文件夹
+目录格式参考：https://github.com/wugengfeng/config.git 的config-local和config-dev文件夹
 ```
 
 消息总线，自动刷新微服务配置

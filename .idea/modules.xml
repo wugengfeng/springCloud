@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://F:\springCloud\micro-server\common-server\common-server.iml" filepath="F:\springCloud\micro-server\common-server\common-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-util/common-server-util/common-server-util.iml" filepath="$PROJECT_DIR$/common-util/common-server-util/common-server-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/config-server/config-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/gateway-server/gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/git-config-server/git-config-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/git-config-server/git-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/monitor-server/monitor-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/monitor-server/monitor-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/business-facade/order-facade/order-facade.iml" filepath="$PROJECT_DIR$/micro-server/business-facade/order-facade/order-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/business-server/order-server/order-server.iml" filepath="$PROJECT_DIR$/micro-server/business-server/order-server/order-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent/parent.iml" filepath="$PROJECT_DIR$/parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server-consumer/shopping-mall/shopping-mall.iml" filepath="$PROJECT_DIR$/server-consumer/shopping-mall/shopping-mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springCloud.iml" filepath="$PROJECT_DIR$/.idea/springCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/sidecar-server/stock-server/stock-server.iml" filepath="$PROJECT_DIR$/micro-server/sidecar-server/stock-server/stock-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/turbine-server/turbine-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/turbine-server/turbine-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/business-facade/user-facade/user-facade.iml" filepath="$PROJECT_DIR$/micro-server/business-facade/user-facade/user-facade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/business-server/user-server/user-server.iml" filepath="$PROJECT_DIR$/micro-server/business-server/user-server/user-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micro-server/common-server/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/micro-server/common-server/zipkin-server/zipkin-server.iml" />
+    </modules>
+  </component>
+</project>

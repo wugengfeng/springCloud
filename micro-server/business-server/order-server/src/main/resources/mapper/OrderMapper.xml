@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wugf.order.dao.OrderInfoDao">
+
+
+    <sql id="allColumnInfo">
+        o.id id,
+        o.order_num orderNum,
+        o.total_price totalPrice,
+        o.order_user_id orderUserId,
+        o.delivery_address deliveryAddress,
+        o.create_date createDate,
+        o.payment_date paymentDate
+    </sql>
+
+    <insert id="create">
+        insert into order_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null"> id, </if>
+            <if test="orderNum != null"> order_num, </if>
+            <if test="totalPrice != null"> total_price, </if>
+            <if test="orderUserId != null"> order_user_id, </if>
+            <if test="deliveryAddress != null"> delivery_address, </if>
+            <if test="createDate != null"> create_date, </if>
+            <if test="paymentDate != null"> payment_date, </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null"> #{id}, </if>
+            <if test="orderNum != null"> #{orderNum}, </if>
+            <if test="totalPrice != null"> #{totalPrice}, </if>
+            <if test="orderUserId != null"> #{orderUserId}, </if>
+            <if test="deliveryAddress != null"> #{deliveryAddress}, </if>
+            <if test="createDate != null"> #{createDate}, </if>
+            <if test="paymentDate != null"> #{paymentDate}, </if>
+        </trim>
+    </insert>
+
+    <select id="search" resultType="com.wugf.order.entity.OrderInfo">
+        select <include refid="allColumnInfo"/>
+        from order_info o
+        <where>
+            <if test="id != null"> and o.id = #{id} </if>
+            <if test="orderNum != null"> and o.order_num = #{orderNum} </if>
+            <if test="totalPrice != null"> and o.total_price = #{totalPrice} </if>
+            <if test="orderUserId != null"> and o.order_user_id = #{orderUserId} </if>
+            <if test="deliveryAddress != null"> and o.delivery_address = #{deliveryAddress} </if>
+            <if test="createDate != null"> and o.create_date = #{createDate} </if>
+            <if test="paymentDate != null"> and o.payment_date = #{paymentDate} </if>
+        </where>
+    </select>
+
+    <update id="update">
+        update order_info
+        <set>
+            <if test="orderNum != null"> order_num = #{orderNum} </if>
+            <if test="totalPrice != null"> total_price = #{totalPrice} </if>
+            <if test="orderUserId != null"> order_user_id = #{orderUserId} </if>
+            <if test="deliveryAddress != null"> delivery_address = #{deliveryAddress} </if>
+            <if test="createDate != null"> create_date = #{createDate} </if>
+            <if test="paymentDate != null"> payment_date = #{paymentDate} </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteOrderInfoById">
+        delete from order_info
+        where id = #{id}
+    </delete>
+
+    <select id="searchOrderInfoById" resultType="com.wugf.order.entity.OrderInfo">
+        select <include refid="allColumnInfo"/>
+        from order_info o
+        where o.id = #{id}
+    </select>
+</mapper>

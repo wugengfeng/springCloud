@@ -1,3 +1,7 @@
 spring:
   application:
     name: order-server
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  configLocation: classpath:mybatis-config.xml

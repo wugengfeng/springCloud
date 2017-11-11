@@ -1,7 +1,26 @@
 商城接口服务（服务消费端）
 ---
+```
 此服务的接口均为外部接口
-所有跨服务间调用全在Manager层
+所有跨服务间调用全在manager层
+
+此项目的跨服务调用在　OrderInfoApiImpl　中
+测试跨服务调用需要开启的服务有
+git-config-server
+order-server
+shopping-mall
+user-server
+zipkin-server
+如果不开启监控服务 zipkin-server 调用 http://localhost:9093/order/getOrderDetail?orderId=1
+第一次会报错,原因是采集数据推送到监控服务链接异常
+如果确实不需要监控可注释以下依赖
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+</dependency>
+
+当然也可以开启网关服务(gateway-server)，调用：http://localhost:5000/mall/order/getOrderDetail?orderId=1
+```
 
 ribbon
 ---

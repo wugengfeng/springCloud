@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/common/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-service/common-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-service/common-server/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/business-server/user-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/business-facade/user-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/business-server/order-server/pom.xml" />
+        <option value="$PROJECT_DIR$/server-consumer/shopping-mall/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/business-facade/order-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/monitor-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/turbine-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/sidecar-server/stock-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/git-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-server/common-server/zipkin-server/pom.xml" />
+        <option value="$PROJECT_DIR$/common-util/common-server-util/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

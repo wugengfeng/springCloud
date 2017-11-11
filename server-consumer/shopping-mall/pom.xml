@@ -69,10 +69,20 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.wugf</groupId>
+			<artifactId>common-server-util</artifactId>
+		</dependency>
+
 		<!-- 微服务接口项目 -->
 		<dependency>
 			<groupId>com.wugf</groupId>
 			<artifactId>order-facade</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.wugf</groupId>
+			<artifactId>user-facade</artifactId>
 		</dependency>
 	</dependencies>
 

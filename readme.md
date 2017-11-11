@@ -1,6 +1,7 @@
 目录结构
 ---
 ```
+common-util
 micro-server
     business-facade
     business-server
@@ -11,6 +12,7 @@ server-consumer
 ```
 | 目录       | 说明           |
 | ------------- |-------------|
+| common-util | 公用工具包目录 |
 | micro-server | 基础微服务目录 |
 | business-facade| 微服务Api接口目录 |
 | business-server| 微服务目录 |
@@ -18,6 +20,8 @@ server-consumer
 | sidecar-server | 跨语言集成spring cloud 服务目录|
 | parent         | 公共父类工程目录 |
 | server-consumer| 微服务消费者目录 |
+
+db脚本github 的db目录下
 
 该微服务架构可解决哪些问题？
 ---

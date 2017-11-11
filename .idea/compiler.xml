@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-server" />
+        <module name="common-server-util" />
+        <module name="config-server" />
+        <module name="eureka-server" />
+        <module name="gateway-server" />
+        <module name="git-config-server" />
+        <module name="monitor-server" />
+        <module name="order-facade" />
+        <module name="order-server" />
+        <module name="shopping-mall" />
+        <module name="stock-server" />
+        <module name="turbine-server" />
+        <module name="user-facade" />
+        <module name="user-server" />
+        <module name="zipkin-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-server" target="1.8" />
+      <module name="common-server-util" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="gateway-server" target="1.8" />
+      <module name="git-config-server" target="1.8" />
+      <module name="monitor-server" target="1.8" />
+      <module name="order-facade" target="1.8" />
+      <module name="order-server" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="shopping-mall" target="1.8" />
+      <module name="sidecar-server" target="1.8" />
+      <module name="stock-server" target="1.8" />
+      <module name="turbine-server" target="1.8" />
+      <module name="user-facade" target="1.8" />
+      <module name="user-server" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

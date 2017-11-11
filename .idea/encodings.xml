@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/common-util/common-server-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/business-facade/order-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/business-facade/user-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/business-server/order-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/business-server/user-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/gateway-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/git-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/monitor-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/turbine-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/turbine-server/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/common-server/zipkin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro-server/sidecar-server/stock-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-consumer/shopping-mall" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server-consumer/shopping-mall/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
