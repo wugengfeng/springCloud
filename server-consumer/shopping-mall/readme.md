@@ -10,6 +10,7 @@ git-config-server
 order-server
 shopping-mall
 user-server
+eureka-server
 zipkin-server
 如果不开启监控服务 zipkin-server 调用 http://localhost:9093/order/getOrderDetail?orderId=1
 第一次会报错,原因是采集数据推送到监控服务链接异常
