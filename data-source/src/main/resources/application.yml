@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    order:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      initialize: true #指定初始化数据源，是否用data.sql来初始化，默认: true
+      name: order
+      url: jdbc:mysql://127.0.0.1:3306/ecs_order?characterEncoding=utf-8
+      username: root
+      password: root
+    user:
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      initialize: true
+      name: user
+      url: jdbc:mysql://127.0.0.1:3306/ecs_user?characterEncoding=utf-8
+      username: root
+      password: root
