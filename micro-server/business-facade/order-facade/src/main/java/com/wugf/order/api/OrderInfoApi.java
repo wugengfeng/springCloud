@@ -18,5 +18,5 @@ public interface OrderInfoApi {
      * @return
      */
     @RequestMapping(value = "getOrderInfo", method = RequestMethod.POST)
-    OrderInfo getOrderInfoById(@RequestParam("orderId") Integer orderId);
+    OrderInfo getOrderInfoById(@RequestParam("orderId") Integer orderId) throws InterruptedException;
 }

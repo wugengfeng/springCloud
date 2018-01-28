@@ -27,9 +27,14 @@
       <module name="common-server" target="1.8" />
       <module name="common-server-util" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="data-source" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="gateway-server" target="1.8" />
       <module name="git-config-server" target="1.8" />
+      <module name="hessian-api" target="1.8" />
+      <module name="hessian-client" target="1.8" />
+      <module name="hessian-server" target="1.8" />
+      <module name="https" target="1.8" />
       <module name="monitor-server" target="1.8" />
       <module name="order-facade" target="1.8" />
       <module name="order-server" target="1.8" />

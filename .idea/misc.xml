@@ -22,6 +22,11 @@
         <option value="$PROJECT_DIR$/micro-server/common-server/git-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/micro-server/common-server/zipkin-server/pom.xml" />
         <option value="$PROJECT_DIR$/common-util/common-server-util/pom.xml" />
+        <option value="$PROJECT_DIR$/hessian/hessian-server/pom.xml" />
+        <option value="$PROJECT_DIR$/hessian/hessian-client/pom.xml" />
+        <option value="$PROJECT_DIR$/hessian/hessian-api/pom.xml" />
+        <option value="$PROJECT_DIR$/https/https/pom.xml" />
+        <option value="$PROJECT_DIR$/data-source/pom.xml" />
       </list>
     </option>
   </component>

@@ -17,7 +17,9 @@ public class OrderInfoApiImpl implements OrderInfoApi{
     private OrderInfoService orderInfoService;
 
     @Override
-    public OrderInfo getOrderInfoById(@RequestParam("orderId") Integer orderId) {
-        return orderInfoService.searchOrderInfoById(orderId);
+    public OrderInfo getOrderInfoById(@RequestParam("orderId") Integer orderId) throws InterruptedException {
+        Thread.sleep(2000l);
+        throw new RuntimeException();
+        //return orderInfoService.searchOrderInfoById(orderId);
     }
 }

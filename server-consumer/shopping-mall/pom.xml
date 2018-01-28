@@ -57,6 +57,11 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.retry</groupId>
+			<artifactId>spring-retry</artifactId>
+		</dependency>
+
 		<!-- 微服务跟踪依赖 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
